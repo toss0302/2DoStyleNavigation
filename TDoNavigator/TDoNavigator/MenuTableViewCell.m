@@ -7,6 +7,7 @@
 //
 
 #import "MenuTableViewCell.h"
+#import "Config.h"
 
 @implementation MenuTableViewCell
 
@@ -31,11 +32,11 @@
         
         self.imageView.contentMode = UIViewContentModeCenter;
         
-        UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 1)];
+        UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, MENU_WIDTH_LAND, 1)];
         topLine.backgroundColor = [UIColor colorWithWhite:0.5 alpha:0.25];
         [self.textLabel.superview addSubview:topLine];
         
-        UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, 43, 200, 1)];
+        UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, 43, MENU_WIDTH_LAND, 1)];
         bottomLine.backgroundColor = [UIColor colorWithWhite:0 alpha:0.25];
         [self.textLabel.superview addSubview:bottomLine];
         

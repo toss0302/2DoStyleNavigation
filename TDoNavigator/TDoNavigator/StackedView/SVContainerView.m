@@ -1,17 +1,17 @@
 //
-//  PSContainerView.m
-//  PSStackedView
+//  ContainerView.m
+//  StackedView
 //
 //  Created by BigWin on 2/19/17.
 //  Copyright © 2017 Petr. All rights reserved.
 //
 
-#import "PSSVContainerView.h"
-#import "PSStackedViewGlobal.h"
-#import "UIView+PSSizes.h"
-#import "PSStackedViewController.h"
-#import "UIViewController+PSStackedView.h"
-@interface PSSVContainerView ()
+#import "SVContainerView.h"
+#import "StackedViewGlobal.h"
+#import "UIView+Sizes.h"
+#import "StackedViewController.h"
+#import "UIViewController+StackedView.h"
+@interface SVContainerView ()
 @property(nonatomic, assign) CGFloat originalWidth;
 @property(nonatomic, strong) CAGradientLayer *leftShadowLayer;
 @property(nonatomic, strong) CAGradientLayer *innerShadowLayer;
@@ -19,7 +19,7 @@
 @property(nonatomic, strong) UIView *transparentView;
 @end
 
-@implementation PSSVContainerView
+@implementation SVContainerView
 
 @synthesize shadow = shadow_;
 @synthesize originalWidth = originalWidth_;
@@ -70,15 +70,15 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - NSObject
 
-+ (PSSVContainerView *)containerViewWithController:(UIViewController *)controller; {
-    PSSVContainerView *view = [[PSSVContainerView alloc] initWithFrame:controller.view.frame];
++ (SVContainerView *)containerViewWithController:(UIViewController *)controller; {
+    SVContainerView *view = [[SVContainerView alloc] initWithFrame:controller.view.frame];
     view.controller = controller;    
     return view;
 }
 
 - (void)dealloc {
     [self removeMask];
-    self.shadow = PSSVSideNone; // TODO needed?
+    self.shadow = SVSideNone; // TODO needed?
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -169,10 +169,10 @@
     self.shadow = shadow_;
 }
 
-- (void)setShadow:(PSSVSide)shadow {
+- (void)setShadow:(SVSide)shadow {
     shadow_ = shadow;
     
-    if (shadow & PSSVSideLeft) {
+    if (shadow & SVSideLeft) {
         if (!self.leftShadowLayer) {
             CAGradientLayer *leftShadow = [self shadowAsInverse:YES];
             self.leftShadowLayer = leftShadow;
@@ -185,7 +185,7 @@
         [self.leftShadowLayer removeFromSuperlayer];
     }
     
-    if (shadow & PSSVSideRight) {
+    if (shadow & SVSideRight) {
         if (!self.rightShadowLayer) {
             CAGradientLayer *rightShadow = [self shadowAsInverse:NO];
             self.rightShadowLayer = rightShadow;

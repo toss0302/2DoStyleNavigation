@@ -1,27 +1,27 @@
 //
-//  UIViewController+PSStackedView.h
-//  3MobileTV
+//  UIViewController+StackedView.h
+//  StackedView
 //
 //  Created by BigWin on 2/19/17.
 //  Copyright © 2017 Petr. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "PSStackedViewGlobal.h"
+#import "StackedViewGlobal.h"
 
-@class PSSVContainerView, PSStackedViewController;
+@class SVContainerView, StackedViewController;
 
-/// category for PSStackedView extensions
-@interface UIViewController (PSStackedView)
+/// category for StackedView extensions
+@interface UIViewController (StackedView)
 
 - (CGFloat)stackWidth;
 - (void)setStackWidth:(CGFloat)stackWidth;
 
 /// returns the containerView, where view controllers are embedded
-- (PSSVContainerView *)containerView;
+- (SVContainerView *)containerView;
 
 /// returns the stack controller if the viewController is embedded
-- (PSStackedViewController *)stackController;
+- (StackedViewController *)stackController;
 
 - (BOOL)panEnabled;
 - (void)setPanEnabled:(BOOL)panEnabled;

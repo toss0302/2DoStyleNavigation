@@ -1,35 +1,35 @@
 //
-//  PSStackedViewGlobal.h
-//  PSStackedView
+//  StackedViewGlobal.h
+//  StackedView
 //
 //  Created by BigWin on 2/19/17.
 //  Copyright © 2017 Petr. All rights reserved.
 //
 
-#import "UIView+PSSizes.h"
+#import "UIView+Sizes.h"
 
 // Swizzles UIViewController's navigationController property. DANGER, WILL ROBINSON!
-// Only swizzles if a PSStackedViewRootController is created, and also works in peaceful
+// Only swizzles if a StackedViewRootController is created, and also works in peaceful
 // coexistance to UINavigationController.
 //#define ALLOW_SWIZZLING_NAVIGATIONCONTROLLER
 
-#define kPSSVAssociatedStackViewControllerKey @"kPSSVAssociatedStackViewController"
+#define kSVAssociatedStackViewControllerKey @"kSVAssociatedStackViewController"
 
-#define kPSSVStackedViewKitDebugEnabled
+#define kSVStackedViewKitDebugEnabled
 
-#define PSIsIpad() ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
-#define PSAppStatusBarOrientation ([[UIApplication sharedApplication] statusBarOrientation])
-#define PSIsPortrait()  UIInterfaceOrientationIsPortrait(PSAppStatusBarOrientation)
-#define PSIsLandscape() UIInterfaceOrientationIsLandscape(PSAppStatusBarOrientation)
+#define IsIpad() ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+#define AppStatusBarOrientation ([[UIApplication sharedApplication] statusBarOrientation])
+#define IsPortrait()  UIInterfaceOrientationIsPortrait(AppStatusBarOrientation)
+#define IsLandscape() UIInterfaceOrientationIsLandscape(AppStatusBarOrientation)
 
-#ifdef kPSSVStackedViewKitDebugEnabled
-#define PSSVLogVerbose(fmt, ...) do { if(kPSSVDebugLogLevel >= PSSVLogLevelVerbose) NSLog((@"%s/%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); }while(0)
-#define PSSVLog(fmt, ...) do { if(kPSSVDebugLogLevel >= PSSVLogLevelInfo) NSLog((@"%s/%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); }while(0)
-#define PSSVLogError(fmt, ...) do { if(kPSSVDebugLogLevel >= PSSVLogLevelError) NSLog((@"Error: %s/%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); }while(0)
+#ifdef kSVStackedViewKitDebugEnabled
+#define SVLogVerbose(fmt, ...) do { if(kSVDebugLogLevel >= SVLogLevelVerbose) NSLog((@"%s/%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); }while(0)
+#define SVLog(fmt, ...) do { if(kSVDebugLogLevel >= SVLogLevelInfo) NSLog((@"%s/%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); }while(0)
+#define SVLogError(fmt, ...) do { if(kSVDebugLogLevel >= SVLogLevelError) NSLog((@"Error: %s/%d " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__); }while(0)
 #else
-#define PSSVLogVerbose(...)
-#define PSSVLog(...)
-#define PSVSLogError(...)
+#define SVLogVerbose(...)
+#define SVLog(...)
+#define VSLogError(...)
 #endif
 
 

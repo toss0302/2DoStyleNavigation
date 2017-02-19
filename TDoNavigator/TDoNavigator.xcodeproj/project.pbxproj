@@ -27,12 +27,12 @@
 		8912BB641E59733B0086091F /* NewGlow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8912BB591E59733B0086091F /* NewGlow.png */; };
 		8912BB651E59733B0086091F /* NewGlow.psd in Resources */ = {isa = PBXBuildFile; fileRef = 8912BB5A1E59733B0086091F /* NewGlow.psd */; };
 		8912BB661E59733B0086091F /* NewGlow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8912BB5B1E59733B0086091F /* NewGlow@2x.png */; };
-		89BA09791E59783D00437627 /* PSStackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA096D1E59783D00437627 /* PSStackedViewController.m */; };
-		89BA097A1E59783D00437627 /* PSStackedViewGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09701E59783D00437627 /* PSStackedViewGlobal.m */; };
-		89BA097B1E59783D00437627 /* PSStackedViewSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09721E59783D00437627 /* PSStackedViewSegue.m */; };
-		89BA097C1E59783D00437627 /* PSSVContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09741E59783D00437627 /* PSSVContainerView.m */; };
-		89BA097D1E59783D00437627 /* UIView+PSSizes.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09761E59783D00437627 /* UIView+PSSizes.m */; };
-		89BA097E1E59783D00437627 /* UIViewController+PSStackedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09781E59783D00437627 /* UIViewController+PSStackedView.m */; };
+		89BA09791E59783D00437627 /* StackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA096D1E59783D00437627 /* StackedViewController.m */; };
+		89BA097A1E59783D00437627 /* StackedViewGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09701E59783D00437627 /* StackedViewGlobal.m */; };
+		89BA097B1E59783D00437627 /* StackedViewSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09721E59783D00437627 /* StackedViewSegue.m */; };
+		89BA097C1E59783D00437627 /* SVContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09741E59783D00437627 /* SVContainerView.m */; };
+		89BA097D1E59783D00437627 /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09761E59783D00437627 /* UIView+Sizes.m */; };
+		89BA097E1E59783D00437627 /* UIViewController+StackedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89BA09781E59783D00437627 /* UIViewController+StackedView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,20 +64,21 @@
 		8912BB591E59733B0086091F /* NewGlow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewGlow.png; sourceTree = "<group>"; };
 		8912BB5A1E59733B0086091F /* NewGlow.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewGlow.psd; sourceTree = "<group>"; };
 		8912BB5B1E59733B0086091F /* NewGlow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NewGlow@2x.png"; sourceTree = "<group>"; };
-		89BA096B1E59783D00437627 /* PSStackedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSStackedView.h; sourceTree = "<group>"; };
-		89BA096C1E59783D00437627 /* PSStackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSStackedViewController.h; sourceTree = "<group>"; };
-		89BA096D1E59783D00437627 /* PSStackedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSStackedViewController.m; sourceTree = "<group>"; };
-		89BA096E1E59783D00437627 /* PSStackedViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSStackedViewDelegate.h; sourceTree = "<group>"; };
-		89BA096F1E59783D00437627 /* PSStackedViewGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSStackedViewGlobal.h; sourceTree = "<group>"; };
-		89BA09701E59783D00437627 /* PSStackedViewGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSStackedViewGlobal.m; sourceTree = "<group>"; };
-		89BA09711E59783D00437627 /* PSStackedViewSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSStackedViewSegue.h; sourceTree = "<group>"; };
-		89BA09721E59783D00437627 /* PSStackedViewSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSStackedViewSegue.m; sourceTree = "<group>"; };
-		89BA09731E59783D00437627 /* PSSVContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSVContainerView.h; sourceTree = "<group>"; };
-		89BA09741E59783D00437627 /* PSSVContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSVContainerView.m; sourceTree = "<group>"; };
-		89BA09751E59783D00437627 /* UIView+PSSizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PSSizes.h"; sourceTree = "<group>"; };
-		89BA09761E59783D00437627 /* UIView+PSSizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PSSizes.m"; sourceTree = "<group>"; };
-		89BA09771E59783D00437627 /* UIViewController+PSStackedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PSStackedView.h"; sourceTree = "<group>"; };
-		89BA09781E59783D00437627 /* UIViewController+PSStackedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PSStackedView.m"; sourceTree = "<group>"; };
+		899D466B1E598FCE0012C967 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		89BA096B1E59783D00437627 /* StackedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedView.h; sourceTree = "<group>"; };
+		89BA096C1E59783D00437627 /* StackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedViewController.h; sourceTree = "<group>"; };
+		89BA096D1E59783D00437627 /* StackedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedViewController.m; sourceTree = "<group>"; };
+		89BA096E1E59783D00437627 /* StackedViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedViewDelegate.h; sourceTree = "<group>"; };
+		89BA096F1E59783D00437627 /* StackedViewGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedViewGlobal.h; sourceTree = "<group>"; };
+		89BA09701E59783D00437627 /* StackedViewGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedViewGlobal.m; sourceTree = "<group>"; };
+		89BA09711E59783D00437627 /* StackedViewSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedViewSegue.h; sourceTree = "<group>"; };
+		89BA09721E59783D00437627 /* StackedViewSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedViewSegue.m; sourceTree = "<group>"; };
+		89BA09731E59783D00437627 /* SVContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVContainerView.h; sourceTree = "<group>"; };
+		89BA09741E59783D00437627 /* SVContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVContainerView.m; sourceTree = "<group>"; };
+		89BA09751E59783D00437627 /* UIView+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sizes.h"; sourceTree = "<group>"; };
+		89BA09761E59783D00437627 /* UIView+Sizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sizes.m"; sourceTree = "<group>"; };
+		89BA09771E59783D00437627 /* UIViewController+StackedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StackedView.h"; sourceTree = "<group>"; };
+		89BA09781E59783D00437627 /* UIViewController+StackedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StackedView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +126,7 @@
 				8912BB451E594A4F0086091F /* MenuTableViewCell.m */,
 				8912BB461E594A4F0086091F /* UIImage+OverlayColor.h */,
 				8912BB471E594A4F0086091F /* UIImage+OverlayColor.m */,
+				899D466B1E598FCE0012C967 /* Config.h */,
 				8912BB011E5936790086091F /* Assets.xcassets */,
 				8912BB061E5936790086091F /* Info.plist */,
 				8912BAF51E5936790086091F /* Supporting Files */,
@@ -177,20 +179,20 @@
 		89BA096A1E59783D00437627 /* StackedView */ = {
 			isa = PBXGroup;
 			children = (
-				89BA096B1E59783D00437627 /* PSStackedView.h */,
-				89BA096C1E59783D00437627 /* PSStackedViewController.h */,
-				89BA096D1E59783D00437627 /* PSStackedViewController.m */,
-				89BA096E1E59783D00437627 /* PSStackedViewDelegate.h */,
-				89BA096F1E59783D00437627 /* PSStackedViewGlobal.h */,
-				89BA09701E59783D00437627 /* PSStackedViewGlobal.m */,
-				89BA09711E59783D00437627 /* PSStackedViewSegue.h */,
-				89BA09721E59783D00437627 /* PSStackedViewSegue.m */,
-				89BA09731E59783D00437627 /* PSSVContainerView.h */,
-				89BA09741E59783D00437627 /* PSSVContainerView.m */,
-				89BA09751E59783D00437627 /* UIView+PSSizes.h */,
-				89BA09761E59783D00437627 /* UIView+PSSizes.m */,
-				89BA09771E59783D00437627 /* UIViewController+PSStackedView.h */,
-				89BA09781E59783D00437627 /* UIViewController+PSStackedView.m */,
+				89BA096B1E59783D00437627 /* StackedView.h */,
+				89BA096C1E59783D00437627 /* StackedViewController.h */,
+				89BA096D1E59783D00437627 /* StackedViewController.m */,
+				89BA096E1E59783D00437627 /* StackedViewDelegate.h */,
+				89BA096F1E59783D00437627 /* StackedViewGlobal.h */,
+				89BA09701E59783D00437627 /* StackedViewGlobal.m */,
+				89BA09711E59783D00437627 /* StackedViewSegue.h */,
+				89BA09721E59783D00437627 /* StackedViewSegue.m */,
+				89BA09731E59783D00437627 /* SVContainerView.h */,
+				89BA09741E59783D00437627 /* SVContainerView.m */,
+				89BA09751E59783D00437627 /* UIView+Sizes.h */,
+				89BA09761E59783D00437627 /* UIView+Sizes.m */,
+				89BA09771E59783D00437627 /* UIViewController+StackedView.h */,
+				89BA09781E59783D00437627 /* UIViewController+StackedView.m */,
 			);
 			path = StackedView;
 			sourceTree = "<group>";
@@ -276,17 +278,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BA097E1E59783D00437627 /* UIViewController+PSStackedView.m in Sources */,
-				89BA097D1E59783D00437627 /* UIView+PSSizes.m in Sources */,
+				89BA097E1E59783D00437627 /* UIViewController+StackedView.m in Sources */,
+				89BA097D1E59783D00437627 /* UIView+Sizes.m in Sources */,
 				8912BB4D1E594A4F0086091F /* UIImage+OverlayColor.m in Sources */,
-				89BA097A1E59783D00437627 /* PSStackedViewGlobal.m in Sources */,
+				89BA097A1E59783D00437627 /* StackedViewGlobal.m in Sources */,
 				8912BAFA1E5936790086091F /* AppDelegate.m in Sources */,
 				8912BB4A1E594A4F0086091F /* ExampleViewController2.m in Sources */,
 				8912BAF71E5936790086091F /* main.m in Sources */,
 				8912BB481E594A4F0086091F /* ExampleViewController1.m in Sources */,
-				89BA09791E59783D00437627 /* PSStackedViewController.m in Sources */,
-				89BA097B1E59783D00437627 /* PSStackedViewSegue.m in Sources */,
-				89BA097C1E59783D00437627 /* PSSVContainerView.m in Sources */,
+				89BA09791E59783D00437627 /* StackedViewController.m in Sources */,
+				89BA097B1E59783D00437627 /* StackedViewSegue.m in Sources */,
+				89BA097C1E59783D00437627 /* SVContainerView.m in Sources */,
 				8912BB4C1E594A4F0086091F /* MenuTableViewCell.m in Sources */,
 				8912BB4B1E594A4F0086091F /* ExampleMenuRootController.m in Sources */,
 			);

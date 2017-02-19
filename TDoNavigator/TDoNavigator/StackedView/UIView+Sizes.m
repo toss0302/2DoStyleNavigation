@@ -1,14 +1,14 @@
 //
-//  UIView+PSSizes.m
-//  PSStackedView
+//  UIView+Sizes.m
+//  StackedView
 //
 //  Created by BigWin on 2/19/17.
 //  Copyright © 2017 Petr. All rights reserved.
 //
 
-#import "UIView+PSSizes.h"
+#import "UIView+Sizes.h"
 
-@implementation UIView (PSSizes)
+@implementation UIView (Sizes)
 
 - (CGFloat)left {
     return self.frame.origin.x;

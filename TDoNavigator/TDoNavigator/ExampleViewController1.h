@@ -7,9 +7,9 @@
 //
 
 #include <UIKit/UIKit.h>
-#include "PSStackedViewDelegate.h"
+#include "StackedViewDelegate.h"
 
-@interface ExampleViewController1 : UIViewController <PSStackedViewDelegate>
+@interface ExampleViewController1 : UIViewController <StackedViewDelegate>
 
 @property(nonatomic, strong) IBOutlet UILabel *indexNumberLabel;
 @property(nonatomic, assign) NSUInteger indexNumber;

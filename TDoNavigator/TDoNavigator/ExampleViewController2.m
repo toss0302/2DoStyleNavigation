@@ -30,7 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.width = PSIsIpad() ? 450 : 100;
+    self.view.width = IsIpad() ? 450 : 100;
 }
 
 
@@ -62,7 +62,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {    
-    UIViewController<PSStackedViewDelegate> *viewController;
+    UIViewController<StackedViewDelegate> *viewController;
     if (indexPath.row == 0) {
         viewController = [[ExampleViewController1 alloc] initWithNibName:@"ExampleViewController1" bundle:nil];
     }else {
@@ -81,7 +81,7 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-#pragma mark - PSStackedViewDelegate
+#pragma mark - StackedViewDelegate
 
 - (NSUInteger)stackableMinWidth; {
     return 100;

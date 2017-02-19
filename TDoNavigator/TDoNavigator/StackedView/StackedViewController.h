@@ -1,14 +1,14 @@
 //
 //  SVStackRootController.h
-//  PSStackedView
+//  StackedView
 //
 //  Created by BigWin on 2/19/17.
 //  Copyright © 2017 Petr. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "PSStackedViewGlobal.h"
-#import "PSStackedViewDelegate.h"
+#import "StackedViewGlobal.h"
+#import "StackedViewDelegate.h"
 
 /// grid snapping options
 enum {
@@ -16,10 +16,10 @@ enum {
     SVSnapOptionNearest,
     SVSnapOptionLeft,
     SVSnapOptionRight
-} typedef PSSVSnapOption;
+} typedef SVSnapOption;
 
 /// StackController hosing a backside rootViewController and the stacked controllers
-@interface PSStackedViewController : UIViewController
+@interface StackedViewController : UIViewController
 
 /// the root controller gets the whole background view
 - (id)initWithRootViewController:(UIViewController *)rootViewController;
@@ -78,7 +78,7 @@ enum {
 - (NSInteger)indexOfViewController:(UIViewController *)viewController;
 
 /// event delegate
-@property(nonatomic, unsafe_unretained) id<PSStackedViewDelegate> delegate;
+@property(nonatomic, unsafe_unretained) id<StackedViewDelegate> delegate;
 
 /// root view controller, always displayed behind stack
 @property(nonatomic, strong) IBOutlet UIViewController *rootViewController;
@@ -128,7 +128,7 @@ enum {
 /// enable scaling while fade in/out
 @property(nonatomic, assign) BOOL enableScalingFadeInOut;
 
-// When true, overlaped views (with overlap ratio under kPSSVOverlapMinimalValueToApplyDarkRatio)
+// When true, overlaped views (with overlap ratio under kSVOverlapMinimalValueToApplyDarkRatio)
 // do not accept touches from user. But, when view is tapped (via UITapGestureRecognizer), the
 // stack is poped to this viewController
 @property (nonatomic, assign) BOOL enablePopOverlapedViewOnTap;

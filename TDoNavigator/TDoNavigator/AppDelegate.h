@@ -7,18 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PSStackedView.h"
+#import "StackedView.h"
 
 #define XAppDelegate ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
-@class PSStackedViewController;
+@class StackedViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
-    PSStackedViewController *stackController_;
+    StackedViewController *stackController_;
 }
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic, strong, readonly) PSStackedViewController *stackController;
+@property (nonatomic, strong, readonly) StackedViewController *stackController;
 
 @end
 

@@ -6,9 +6,9 @@
 //  Copyright © 2017 Petr. All rights reserved.
 //
 
-#include "PSStackedViewDelegate.h"
+#include "StackedViewDelegate.h"
 
-@interface ExampleViewController2 : UITableViewController <PSStackedViewDelegate> {
+@interface ExampleViewController2 : UITableViewController <StackedViewDelegate> {
     NSUInteger indexNumber_;
 }
 

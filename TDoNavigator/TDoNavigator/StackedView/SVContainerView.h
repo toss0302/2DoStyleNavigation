@@ -1,6 +1,6 @@
 //
-//  PSContainerView.h
-//  PSStackedView
+//  SVContainerView.h
+//  StackedView
 //
 //  Created by BigWin on 7/17/11.
 //  Copyright © 2017 Petr. All rights reserved.
@@ -10,23 +10,23 @@
 #import <QuartzCore/QuartzCore.h>
 
 enum {
-    PSSVSideNone = 0x0,
-    PSSVSideRight = 0x01,
-    PSSVSideLeft = 0x02
-}typedef PSSVSide;
+    SVSideNone = 0x0,
+    SVSideRight = 0x01,
+    SVSideLeft = 0x02
+}typedef SVSide;
 
 
-@interface PSSVContainerView : UIView {
+@interface SVContainerView : UIView {
     UIView *transparentView_;
     CGFloat originalWidth_;
-    PSSVSide shadow_;
+    SVSide shadow_;
     UIViewController *controller_;
     CAGradientLayer *leftShadowLayer_;
     CAGradientLayer *innerShadowLayer_;
 	CAGradientLayer *rightShadowLayer_;
 }
 
-+ (PSSVContainerView *)containerViewWithController:(UIViewController *)controller;
++ (SVContainerView *)containerViewWithController:(UIViewController *)controller;
 
 /// limit to max width
 - (CGFloat)limitToMaxWidth:(CGFloat)maxWidth;
@@ -41,7 +41,7 @@ enum {
 - (void)updateContainer;
 
 /// set shadow sides
-@property(nonatomic, assign) PSSVSide shadow;
+@property(nonatomic, assign) SVSide shadow;
 
 /// view controller that is being incapsulated
 @property(nonatomic, strong) UIViewController *controller;

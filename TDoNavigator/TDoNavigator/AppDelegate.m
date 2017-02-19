@@ -10,7 +10,7 @@
 #import "ExampleMenuRootController.h"
 
 @interface AppDelegate ()
-@property (nonatomic, strong) PSStackedViewController *stackController;
+@property (nonatomic, strong) StackedViewController *stackController;
 
 @end
 
@@ -28,7 +28,8 @@
     
     // set root controller as stack controller
     ExampleMenuRootController *menuController = [[ExampleMenuRootController alloc] init];
-    self.stackController = [[PSStackedViewController alloc] initWithRootViewController:menuController];
+    self.stackController = [[StackedViewController alloc] initWithRootViewController:menuController];
+    [menuController initialSetup];
     
     // test to disable large inset
     //self.stackController.largeLeftInset = self.stackController.leftInset;
