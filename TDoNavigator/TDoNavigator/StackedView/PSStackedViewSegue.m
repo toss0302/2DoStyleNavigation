@@ -2,8 +2,8 @@
 //  PSStackedViewSegue.m
 //  PSStackedView
 //
-//  Created by Marcel Ball on 12-01-19.
-//  Copyright (c) 2012 BigWin. All rights reserved.
+//  Created by BigWin on 2/19/17.
+//  Copyright © 2017 Petr. All rights reserved.
 //
 
 #import "PSStackedViewSegue.h"

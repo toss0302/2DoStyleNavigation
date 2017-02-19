@@ -465,7 +465,7 @@ enum {
             }
         }
         
-        if (fabsf(validLowIndex - roundedFloat) < fabsf(validHighIndex - roundedFloat)) {
+        if (fabs(validLowIndex - roundedFloat) < fabs(validHighIndex - roundedFloat)) {
             roundedFloat = validLowIndex;
         }else {
             roundedFloat = validHighIndex;
@@ -649,7 +649,7 @@ enum {
     if (overlappedVC) {
         UIViewController *rightVC = [self nextViewController:overlappedVC];
         PSSVLog(@"overlapping %@ with %@", NSStringFromCGRect(overlappedVC.containerView.frame), NSStringFromCGRect(rightVC.containerView.frame));
-        overlapRatio = fabsf(overlappedVC.containerView.right - rightVC.containerView.left)/overlappedVC.containerView.width;
+        overlapRatio = fabs(overlappedVC.containerView.right - rightVC.containerView.left)/overlappedVC.containerView.width;
     }
     return overlapRatio;
 }
@@ -860,7 +860,7 @@ enum {
         if (overlappedVC) {
             UIViewController *rightVC = [self nextViewController:overlappedVC];
             PSSVLog(@"overlapping %@ with %@", NSStringFromCGRect(overlappedVC.containerView.frame), NSStringFromCGRect(rightVC.containerView.frame));
-            overlapRatio = fabsf(overlappedVC.containerView.right - rightVC.containerView.left)/(overlappedVC.containerView.right - ([self screenWidth] - rightVC.containerView.width));
+            overlapRatio = fabs(overlappedVC.containerView.right - rightVC.containerView.left)/(overlappedVC.containerView.right - ([self screenWidth] - rightVC.containerView.width));
         }
         
         // only update ratio if < 1 (else we move sth else)
@@ -871,7 +871,7 @@ enum {
             UIViewController *lastVC = [self.visibleViewControllers lastObject];
             UIViewController *prevVC = [self previousViewController:lastVC];
             if (lastVC && prevVC && lastVC.containerView.right > [self screenWidth]) {
-                overlapRatio = fabsf(([self screenWidth] - lastVC.containerView.left)/([self screenWidth] - (self.leftInset + prevVC.containerView.width)))*.5f;
+                overlapRatio = fabs(([self screenWidth] - lastVC.containerView.left)/([self screenWidth] - (self.leftInset + prevVC.containerView.width)))*.5f;
                 floatIndex += overlapRatio;
             }
         }
@@ -1285,7 +1285,7 @@ enum {
             snapBackFromLeft_ = gridOffset < 0;
             
             // some magic numbers to better reflect movement time
-            duration = abs(gridOffset)/200.f * duration * 0.4f + duration * 0.6f;
+            duration = fabs(gridOffset)/200.f * duration * 0.4f + duration * 0.6f;
         }else if(bounce == PSSVBounceBleedOver) {
             animationCurve = UIViewAnimationCurveEaseOut;
         }
@@ -1302,7 +1302,7 @@ enum {
         BOOL bounceAtVeryEnd = NO;
         
         if ([self shouldSnapAnimate] && bounce == PSSVBounceBleedOver) {
-            snapOverOffset = abs(lastDragOffset_ / 5.f);
+            snapOverOffset = fabsf(lastDragOffset_ / 5.f);
             if (snapOverOffset > kPSSVMaxSnapOverOffset) {
                 snapOverOffset = kPSSVMaxSnapOverOffset;
             }

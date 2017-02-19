@@ -1,8 +1,8 @@
 //
 //  UIImage+OverlayColor.m
-//  PSStackedViewExample
+//  TDoNavigator
 //
-//  Created by Gregory Combs on 7/28/11.
+//  Created by BigWin on 2/19/17.
 //  Copyright © 2017 Petr. All rights reserved.
 //
 //  Adapted from Dave Batton's answer on StackOverflow: 
@@ -19,7 +19,7 @@
 {        
     CGRect rect = CGRectMake(0.0f, 0.0f, self.size.width, self.size.height);
     
-    if (UIGraphicsBeginImageContextWithOptions) {
+    if (&UIGraphicsBeginImageContextWithOptions) {
         CGFloat imageScale = 1.0f;
         if ([self respondsToSelector:@selector(scale)])
             imageScale = self.scale;

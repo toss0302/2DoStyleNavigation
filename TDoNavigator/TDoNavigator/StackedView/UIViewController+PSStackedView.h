@@ -2,8 +2,8 @@
 //  UIViewController+PSStackedView.h
 //  3MobileTV
 //
-//  Created by BigWin on 9/16/11.
-//  Copyright (c) 2011 Hutchison. All rights reserved.
+//  Created by BigWin on 2/19/17.
+//  Copyright © 2017 Petr. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
